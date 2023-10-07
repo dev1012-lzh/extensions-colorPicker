@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 var d = document;
+var doc = document;
 
 d.addEventListener('DOMContentLoaded', function () {
 
