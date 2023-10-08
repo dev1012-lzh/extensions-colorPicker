@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "A simple color picker extension. Easily pick any color on the screen, view a history of picked colors, and copy or clear them with a single click.",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "options_ui": {
+        "page": "options.html"
+    },
+    "icons": {
+        "16": "icons/myicon16.png",
+        "32": "icons/myicon32.png",
+        "48": "icons/myicon48.png",
+        "128": "icons/myicon128.png"
+    }
+}

@@ -1,0 +1,126 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.popup {
+  width: 350px;
+  background: #fff;
+}
+
+.popup :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+}
+
+.popup :where(.all-colors) {
+  background: #cce8ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.popup .picker {
+  padding: 30px 0;
+  background: #e7ebf8;
+  justify-content: center;
+}
+
+.picker #color-picker {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fdfeff;
+  transition: 0.3s ease;
+  color: black;
+}
+
+#color-picker:hover {
+  background: #d5deff;
+  color: black;
+}
+
+.picked-colors {
+  margin: 10px 15px;
+}
+
+.picked-colors header {
+  justify-content: space-between;
+}
+
+header .title {
+  font-size: 1rem;
+}
+
+header .clear-all,
+.buttonspan {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #5372F0;
+  transition: .3s ease;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header .clear-all:hover,
+.buttonspan:hover {
+  background-color: #5372F0;
+  color: white;
+}
+
+.picked-colors.hide {
+  display: none;
+}
+
+.picked-colors .all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0 15px;
+}
+
+.all-colors .color {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 3);
+}
+
+.all-colors .rect {
+  height: 21px;
+  width: 21px;
+  display: block;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+.all-colors .color span {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Open sans";
+}
+
+input[type=text] {
+  padding: 10px;
+  width: 100px;
+  transition-duration: .3s;
+  margin-left: 20px;
+  outline: none;
+  border-radius: 15px;
+  border-width: 5px;
+}
+
+input[type=text]:focus {
+  width: 300px;
+  border-radius: 15px;
+  border-color: #5372F0;
+  border-width: 5px;
+}

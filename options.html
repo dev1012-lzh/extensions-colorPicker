@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="optionstyle.css">
+    <script src="optionscript.js" defer></script>
+    <!-- Defer added to execute the script after page loaded.-->
+</head>
+
+<body>
+    <div class="card">
+        <h1>Settings</h1>
+        <h4>General</h4>
+
+        <label for="actiononclick" class="select">After color picked, do</label>
+        <select name="actiononclick" id="onpick">
+            <option value="copyshow">Copy to clipboard and show it</option>
+            <option value="copy">Copy only</option>
+            <option value="show">Show only</option>
+
+
+        </select>
+
+        <br>
+        <br>
+        <label for="actiononclick" class="select">On click, do</label>
+        <select name="actiononclick" id="onclickcolor">
+            <option value="copy">Copy to clipboard</option>
+            <option value="del">Delete</option>
+            <option value="copydel">Copy to clipboard ,then delete</option>
+            <option value="nothing">Do nothing</option>
+        </select>
+        <br><br><br>
+        <h4>Advance</h4>
+        <label for="name" class="select">Sync your color codes across all your devices?</label>
+        <select name="name" id="" disabled>
+            <option value="yes">Sorry, this option is in develop</option>
+            <option value="no">No, don't sync</option>
+
+        </select>
+        <br><br>
+        <label for="name" class="select">What color codes you want?</label>
+        <select name="name" id="" disabled>
+            <option value="hex"><!-- HEX color codes -->Sorry, this option is in develop</option>
+            <option value="rgba">rgb / rgba color codes</option>
+
+        </select>
+        <br><br>
+        <label for="name" class="select">Show HEX to RGBA converter?</label>
+        <select name="name" id="converter">
+            <option value="yes">Yes!</option>
+            <option value="no">No, hide it.</option>
+
+        </select>
+        <br><br>
+        <h4>Developers</h4>
+        <button id="color-picker">View source files on GitHub</button>
+
+    </div>
+</body>
+
+</html>
